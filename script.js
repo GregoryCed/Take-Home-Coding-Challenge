@@ -18,8 +18,13 @@ request(url, function (error, response, body) {
     // Vamos pegar o título do produto, na tag H2, com ID "product_title"
     respostaFinal['title'] = parsedHtml('h2#product_title').text();
     respostaFinal['brand'] = parsedHtml('div.brand').text();
-    respostaFinal['categories'] = parsedHtml('.current-category a').text();
-       
+    
+    const categorias = []
+    parsedHtml('.current-category>a').each((i, categoria) => {
+        const categ = parsedHtml(categoria).text();
+        categorias[i] = categ;
+    });
+    respostaFinal['categorias'] = categorias;
 
     // Aqui você adiciona os outros campos...
     // Gera string JSON com a resposta final
