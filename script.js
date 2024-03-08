@@ -30,7 +30,7 @@ request(url, function (error, response, body) {
     respostaFinal['categories'] = categorias;
 
     // Pegando a descrição
-    respostaFinal['description'] = parsedHtml('.proddet').text();
+    respostaFinal['description'] = parsedHtml('.proddet p').text();
 
     // Pegando os skus
 
@@ -40,10 +40,10 @@ request(url, function (error, response, body) {
         
         // Objeto dos skuls
         let sku = {
-            "name": "",
+            "name": String,
             "current_price": null,
             "old_price": null,
-            "available": false
+            "available": Boolean
         }
 
         // Pegando as informações dos skuls
@@ -51,6 +51,7 @@ request(url, function (error, response, body) {
         const current_price = parsedHtml(s).find('.card-container .prod-pnow').text();
         const old_price = parsedHtml(s).find('.card-container .prod-pold').text();
         
+        // Atualizando as informações do objeto
         sku['name'] = name;                
         
         if(current_price == ''){
@@ -71,12 +72,78 @@ request(url, function (error, response, body) {
             sku['available'] = true;
         }
 
+        // Passando o ojeto para o vetor
         skus.push(sku);
     });
 
     respostaFinal['skus'] = skus;
 
-    // Aqui você adiciona os outros campos...
+    // Pegando as Propriedades
+
+    // Vetor que armazena os objetos
+    let propriedades = [];
+    parsedHtml('.pure-table tbody>tr').each((i, propt) => {
+        let propriedade = {
+            'label': '',
+            'value': ''
+        }
+
+        const label = parsedHtml(propt).find('td b').text();
+        const value = parsedHtml(propt).find('td').eq(1).text();
+
+        propriedade['label'] = label;
+        propriedade['value'] = value;
+
+        propriedades.push(propriedade);
+    })
+
+    respostaFinal['properties'] = propriedades;
+
+    // Pegando as Reviews
+    
+    let reviews = [];
+    parsedHtml('.analisebox').each((i, rev) => {
+        let review = {
+            'name': String,
+            'date': String,
+            'score': Int8Array,
+            'text': String
+        }
+
+        const name = parsedHtml(rev).find('.pure-g .pure-u-21-24 .analiseusername').text();
+        const date = parsedHtml(rev).find('.pure-g .pure-u-21-24 .analisedate').text();
+        const score = parsedHtml(rev).find('.pure-g .pure-u-21-24 .analisestars').text();
+        const text = parsedHtml(rev).find('p').text();
+
+        review['name'] = name;
+        review['date'] = date;        
+        review['text'] = text;
+
+        if(score == '☆☆☆☆☆'){
+            review['score'] = 0;
+        } else if (score == '★☆☆☆☆'){
+            review['score'] = 1;
+        }else if (score == '★★☆☆☆'){
+            review['score'] = 2;
+        }else if (score == '★★★☆☆'){
+            review['score'] = 3;
+        }else if (score == '★★★★☆'){
+            review['score'] = 4;
+        } else{
+            review['score'] = 5;
+        }
+
+        reviews.push(review);
+    })
+    
+    respostaFinal['reviews'] = reviews;
+
+    // Pegando Avarage score
+    respostaFinal['reviews_average_score'] = parsedHtml('#comments h4').text();
+
+    //Pegando Url da página do produto
+    
+
     // Gera string JSON com a resposta final
     const jsonRespostaFinal = JSON.stringify(respostaFinal);
 
