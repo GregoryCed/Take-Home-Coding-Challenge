@@ -48,24 +48,23 @@ request(url, function (error, response, body) {
 
         // Pegando as informações dos skuls
         const name = parsedHtml(s).find('.card-container .prod-nome').text();
-        const current_price = parsedHtml(s).find('.card-container .prod-pnow').eq(1);
-        const old_price = parsedHtml(s).find('.card-container .prod-pold').text();
-        
+        const current_price = parsedHtml(s).find('.card-container .prod-pnow').text().trim().slice(3).replace(',', '.');
+        const old_price = parsedHtml(s).find('.card-container .prod-pold').text().trim().slice(3).replace(',', '.');    
+
         // Atualizando as informações do objeto
         sku['name'] = name;                
-        sku['current_price'] = current_price;
 
         if(current_price == ''){
             sku['current_price'] = null;
         } else{
-            sku['current_price'] = current_price;
+            sku['current_price'] = parseFloat(current_price);
         }
 
 
         if(old_price == ''){
             sku['old_price'] = null;
         } else{
-            sku['old_price'] = old_price;
+            sku['old_price'] = parseFloat(old_price);
         }
 
         if(current_price == '' && current_price == ''){
@@ -77,7 +76,6 @@ request(url, function (error, response, body) {
         // Passando o ojeto para o vetor
         skus.push(sku);
     });
-
     respostaFinal['skus'] = skus;
 
     // Pegando as Propriedades
@@ -141,9 +139,11 @@ request(url, function (error, response, body) {
     respostaFinal['reviews'] = reviews;
 
     // Pegando Avarage score
-    respostaFinal['reviews_average_score'] = parsedHtml('#comments h4').text();
+    const reviews_average_score = parsedHtml('#comments h4').text().slice(15, 18);
+    respostaFinal['reviews_average_score']  = parseFloat(reviews_average_score);
 
     //Pegando Url da página do produto
+    respostaFinal['url'] = parsedHtml('').text();
     
 
     // Gera string JSON com a resposta final
