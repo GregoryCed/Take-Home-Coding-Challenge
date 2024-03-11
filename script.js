@@ -41,24 +41,26 @@ request(url, function (error, response, body) {
         // Objeto dos skuls
         let sku = {
             "name": String,
-            "current_price": null,
-            "old_price": null,
+            "current_price": Float32Array,
+            "old_price": Float32Array,
             "available": Boolean
         }
 
         // Pegando as informações dos skuls
         const name = parsedHtml(s).find('.card-container .prod-nome').text();
-        const current_price = parsedHtml(s).find('.card-container .prod-pnow').text();
+        const current_price = parsedHtml(s).find('.card-container .prod-pnow').eq(1);
         const old_price = parsedHtml(s).find('.card-container .prod-pold').text();
         
         // Atualizando as informações do objeto
         sku['name'] = name;                
-        
+        sku['current_price'] = current_price;
+
         if(current_price == ''){
             sku['current_price'] = null;
         } else{
             sku['current_price'] = current_price;
         }
+
 
         if(old_price == ''){
             sku['old_price'] = null;
