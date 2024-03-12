@@ -1,1 +1,119 @@
-{"title":"Rubber Duck MK Ultra","brand":"Duck Makers Inc.","categories":["Commercia","Health & Care","Bath","Rubber Ducks"],"description":" Apresentando os Patos de Borracha Quânticos, a última palavra em diversão aquática! Criados pelo excêntrico Dr. Quacksalot, esses patinhos de borracha vão além do comum, com habilidades de fala, dança e personalidades únicas. Com sua durabilidade de alta qualidade, esses patos são garantia de diversão interminável na banheira. Escolha entre uma variedade de cores e estilos e mergulhe na loucura científica do Dr. Quacksalot hoje mesmo!  Cada Patinho de Borracha Quântico vem equipado com um sistema de comunicação interdimensional, permitindo que eles conversem não apenas entre si, mas também com outros objetos inanimados no banheiro - prepare-se para diálogos improváveis entre seu pato de borracha e o sabonete! Além disso, esses patos têm uma habilidade secreta de transformação: basta apertar sua barriguinha e assistir enquanto se transformam em mini submarinos de borracha, prontos para explorar os confins da banheira em busca de aventuras subaquáticas surreais. Com os Patos de Borracha Quânticos, o limite da diversão é apenas sua imaginação (e talvez a sanidade do Dr. Quacksalot)! ","skus":[{"name":" Rubber Duck MK Ultra - Original ","current_price":12.68,"old_price":16.98,"available":true},{"name":" Rubber Duck MK Ultra - Summer Version ","current_price":null,"old_price":null,"available":false},{"name":" Rubber Duck MK Ultra - Batman Version ","current_price":18.98,"old_price":null,"available":true}],"properties":[{"label":"Color","value":"Various"},{"label":"Material","value":"Rubber"},{"label":"Shape","value":"Ducky"},{"label":"Size","value":"Medium"},{"label":"Weight","value":"394 g"},{"label":"Radioactivity Level","value":"Low"},{"label":"Warranty","value":"1 year"},{"label":"Nutritious value","value":"-"},{"label":"Origin","value":"Camboja"},{"label":"Allergenics","value":"None"},{"label":"Recyclable?","value":"Yes"},{"label":"Harmful?","value":"No"},{"label":"Health benefits","value":"None"},{"label":"Storage temperature","value":"0 - 25ºC"},{"label":"Expiration date","value":"None"},{"label":"Carbon footprint","value":"65 g CO2"}],"reviews":[{"name":"Louisa Eliel","date":"28/07/2021","score":4,"text":"Very good rubber ducks, however I think they are a bit too big for me."},{"name":"Kairo Josué","date":"12/05/2021","score":1,"text":"Péssima qualidade. Já não fazem patos de borracha como antigamente."},{"name":"Victor Huey","date":"03/04/2021","score":5,"text":"Very good"}],"reviews_average_score":3.3,"url":"\n    \n    \n    Rubber Duck MK Ultra | Commercia\n    \n    \n    \n    \n    \n    \n  \n  \n    \n      \n        \n          \n            \n              \n            \n            Commercia\n            The best ecommerce on the web\n          \n        \n      \n      \n        \n          Eletronics\n        \n        \n          Home\n        \n        \n          Health & Care\n        \n        \n          Pets\n        \n        \n          Fashion\n        \n        \n          Toys & Games\n        \n        \n          Sports\n        \n        \n          Multimedia\n        \n      \n    \n    \n      $(document).ready(function() {\n        $(\"div.card\").bind(\"click\", function() {\n          $('div.card.selected').removeClass('selected')\n          $(this).addClass('selected');\n          $('div.product-pict > img').attr('src', $(this).find('link[itemprop=image]').attr(\"href\"));\n        });\n      });\n    \n    \n      \n        \n          \n            Commercia> Health & Care > Bath > Rubber Ducks\n          \n          Rubber Duck MK Ultra\n          Duck Makers Inc.\n          \n            \n              \n                \n                \n                \n                  \n                \n                \n                \n                \n                  \n                  \n                  \n                  \n                  \n                \n                \n                \n                   Rubber Duck MK Ultra - Original \n                   R$ 12,68 \n                   R$ 16,98 \n                \n              \n              \n                \n                \n                \n                  \n                \n                \n                \n                \n                \n                   Rubber Duck MK Ultra - Summer Version \n                  Out of stock\n                \n              \n              \n                \n                \n                \n                  \n                \n                \n                \n                \n                \n                   Rubber Duck MK Ultra - Batman Version \n                   R$ 18,98 \n                \n              \n            \n            \n              \n            \n          \n          \n          \n            Description\n             Apresentando os Patos de Borracha Quânticos, a última palavra em diversão aquática! Criados pelo excêntrico Dr. Quacksalot, esses patinhos de borracha vão além do comum, com habilidades de fala, dança e personalidades únicas. Com sua durabilidade de alta qualidade, esses patos são garantia de diversão interminável na banheira. Escolha entre uma variedade de cores e estilos e mergulhe na loucura científica do Dr. Quacksalot hoje mesmo! \n             Cada Patinho de Borracha Quântico vem equipado com um sistema de comunicação interdimensional, permitindo que eles conversem não apenas entre si, mas também com outros objetos inanimados no banheiro - prepare-se para diálogos improváveis entre seu pato de borracha e o sabonete! Além disso, esses patos têm uma habilidade secreta de transformação: basta apertar sua barriguinha e assistir enquanto se transformam em mini submarinos de borracha, prontos para explorar os confins da banheira em busca de aventuras subaquáticas surreais. Com os Patos de Borracha Quânticos, o limite da diversão é apenas sua imaginação (e talvez a sanidade do Dr. Quacksalot)! \n          \n          \n          \n            Product properties\n            \n              \n                \n                  Color\n                \n                Various\n              \n              \n                \n                  Material\n                \n                Rubber\n              \n              \n                \n                  Shape\n                \n                Ducky\n              \n              \n                \n                  Size\n                \n                Medium\n              \n              \n                \n                  Weight\n                \n                394 g\n              \n              \n                \n                  Radioactivity Level\n                \n                Low\n              \n              \n                \n                  Warranty\n                \n                1 year\n            \n          \n          \n            Additional properties\n            \n              \n                \n                  Property\n                  Value\n                \n              \n              \n                \n                  \n                    Nutritious value\n                  \n                  -\n                \n                \n                  \n                    Origin\n                  \n                  Camboja\n                \n                \n                  \n                    Allergenics\n                  \n                  None\n                \n                \n                  \n                    Recyclable?\n                  \n                  Yes\n                \n                \n                  \n                    Harmful?\n                  \n                  No\n                \n                \n                  \n                    Health benefits\n                  \n                  None\n                \n                \n                  \n                    Storage temperature\n                  \n                  0 - 25ºC\n                \n                \n                  \n                    Expiration date\n                  \n                  None\n                \n                \n                  \n                    Carbon footprint\n                  \n                  65 g CO2\n                \n              \n            \n          \n          \n          \n          \n            Reviews\n            Average score: 3.3/5\n            \n              \n                \n                  \n                \n                \n                  Louisa Eliel\n                  28/07/2021\n                  ★★★★☆\n                \n              \n              Very good rubber ducks, however I think they are a bit too big for me.\n            \n            \n              \n                \n                  \n                \n                \n                  Kairo Josué\n                  12/05/2021\n                  ★☆☆☆☆\n                \n              \n              Péssima qualidade. Já não fazem patos de borracha como antigamente.\n            \n            \n              \n                \n                  \n                \n                \n                  Victor Huey\n                  03/04/2021\n                  ★★★★★\n                \n              \n              Very good\n            \n          \n        \n      \n    \n    \n      \n        \n          \n            \n              \n                \n                  \n                \n                \n                Commercia\n              \n              The best ecommerce on the web\n            \n          \n          \n            Follow Us\n            \n              \n                \n                  \n                \n              \n              \n                \n                  \n                \n              \n              \n                \n                  \n                \n              \n            \n          \n        \n        All Rights Reserved © 2020 Commercia\n        Template by CloudCannon\n        \n      \n    \n  \n\n"}
+{
+    "title": "Rubber Duck MK Ultra",
+    "brand": "Duck Makers Inc.",
+    "categories": [
+        "Commercia",
+        "Health & Care",
+        "Bath",
+        "Rubber Ducks"
+    ],
+    "description": " Apresentando os Patos de Borracha Quânticos, a última palavra em diversão aquática! Criados pelo excêntrico Dr. Quacksalot, esses patinhos de borracha vão além do comum, com habilidades de fala, dança e personalidades únicas. Com sua durabilidade de alta qualidade, esses patos são garantia de diversão interminável na banheira. Escolha entre uma variedade de cores e estilos e mergulhe na loucura científica do Dr. Quacksalot hoje mesmo!  Cada Patinho de Borracha Quântico vem equipado com um sistema de comunicação interdimensional, permitindo que eles conversem não apenas entre si, mas também com outros objetos inanimados no banheiro - prepare-se para diálogos improváveis entre seu pato de borracha e o sabonete! Além disso, esses patos têm uma habilidade secreta de transformação: basta apertar sua barriguinha e assistir enquanto se transformam em mini submarinos de borracha, prontos para explorar os confins da banheira em busca de aventuras subaquáticas surreais. Com os Patos de Borracha Quânticos, o limite da diversão é apenas sua imaginação (e talvez a sanidade do Dr. Quacksalot)! ",
+    "skus": [
+        {
+            "name": " Rubber Duck MK Ultra - Original ",
+            "current_price": 12.68,
+            "old_price": 16.98,
+            "available": true
+        },
+        {
+            "name": " Rubber Duck MK Ultra - Summer Version ",
+            "current_price": null,
+            "old_price": null,
+            "available": false
+        },
+        {
+            "name": " Rubber Duck MK Ultra - Batman Version ",
+            "current_price": 18.98,
+            "old_price": null,
+            "available": true
+        }
+    ],
+    "properties": [
+        {
+            "label": "Color",
+            "value": "Various"
+        },
+        {
+            "label": "Material",
+            "value": "Rubber"
+        },
+        {
+            "label": "Shape",
+            "value": "Ducky"
+        },
+        {
+            "label": "Size",
+            "value": "Medium"
+        },
+        {
+            "label": "Weight",
+            "value": "394 g"
+        },
+        {
+            "label": "Radioactivity Level",
+            "value": "Low"
+        },
+        {
+            "label": "Warranty",
+            "value": "1 year"
+        },
+        {
+            "label": "Nutritious value",
+            "value": "-"
+        },
+        {
+            "label": "Origin",
+            "value": "Camboja"
+        },
+        {
+            "label": "Allergenics",
+            "value": "None"
+        },
+        {
+            "label": "Recyclable?",
+            "value": "Yes"
+        },
+        {
+            "label": "Harmful?",
+            "value": "No"
+        },
+        {
+            "label": "Health benefits",
+            "value": "None"
+        },
+        {
+            "label": "Storage temperature",
+            "value": "0 - 25ºC"
+        },
+        {
+            "label": "Expiration date",
+            "value": "None"
+        },
+        {
+            "label": "Carbon footprint",
+            "value": "65 g CO2"
+        }
+    ],
+    "reviews": [
+        {
+            "name": "Louisa Eliel",
+            "date": "28/07/2021",
+            "score": 4,
+            "text": "Very good rubber ducks, however I think they are a bit too big for me."
+        },
+        {
+            "name": "Kairo Josué",
+            "date": "12/05/2021",
+            "score": 1,
+            "text": "Péssima qualidade. Já não fazem patos de borracha como antigamente."
+        },
+        {
+            "name": "Victor Huey",
+            "date": "03/04/2021",
+            "score": 5,
+            "text": "Very good"
+        }
+    ],
+    "reviews_average_score": 3.3,
+    "url": "https://infosimples.com/vagas/desafio/commercia/product.html"
+}

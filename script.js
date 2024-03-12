@@ -60,7 +60,6 @@ request(url, function (error, response, body) {
             sku['current_price'] = parseFloat(current_price);
         }
 
-
         if(old_price == ''){
             sku['old_price'] = null;
         } else{
@@ -76,6 +75,8 @@ request(url, function (error, response, body) {
         // Passando o ojeto para o vetor
         skus.push(sku);
     });
+
+    // Pssando o vetor de objetos para a resposta final
     respostaFinal['skus'] = skus;
 
     // Pegando as Propriedades
@@ -83,26 +84,35 @@ request(url, function (error, response, body) {
     // Vetor que armazena os objetos
     let propriedades = [];
     parsedHtml('.pure-table tbody>tr').each((i, propt) => {
+
+        // Objeto das propriedades
         let propriedade = {
             'label': '',
             'value': ''
         }
 
+        // Pegando as propriedades
         const label = parsedHtml(propt).find('td b').text();
         const value = parsedHtml(propt).find('td').eq(1).text();
 
+        // Passando as informações para o objeto
         propriedade['label'] = label;
         propriedade['value'] = value;
 
+        // Passando o objeto para o vetor
         propriedades.push(propriedade);
     })
 
+    // Passando o vetor de objetos para a resposta final
     respostaFinal['properties'] = propriedades;
 
     // Pegando as Reviews
     
+    // Vetor que armazenará os objetos das reviews
     let reviews = [];
     parsedHtml('.analisebox').each((i, rev) => {
+
+        // Objeto das reviews
         let review = {
             'name': String,
             'date': String,
@@ -110,15 +120,19 @@ request(url, function (error, response, body) {
             'text': String
         }
 
+        // Pegando as informações das reviews
         const name = parsedHtml(rev).find('.pure-g .pure-u-21-24 .analiseusername').text();
         const date = parsedHtml(rev).find('.pure-g .pure-u-21-24 .analisedate').text();
         const score = parsedHtml(rev).find('.pure-g .pure-u-21-24 .analisestars').text();
         const text = parsedHtml(rev).find('p').text();
 
+        // Passando as reviews para o objeto
         review['name'] = name;
         review['date'] = date;        
         review['text'] = text;
 
+        // Verificando o número de estrelas
+        // E passando o valor respectivo para o objeto
         if(score == '☆☆☆☆☆'){
             review['score'] = 0;
         } else if (score == '★☆☆☆☆'){
@@ -133,19 +147,22 @@ request(url, function (error, response, body) {
             review['score'] = 5;
         }
 
+        //Passando o objeto para o vetor das reviews
         reviews.push(review);
     })
     
+    // Passando o vetor de objetos para a resposta final
     respostaFinal['reviews'] = reviews;
 
-    // Pegando Avarage score
+    // Pegando o Avarage score e tratando a string
     const reviews_average_score = parsedHtml('#comments h4').text().slice(15, 18);
+
+    // Passando para a resposta final transformando o valor string em float
     respostaFinal['reviews_average_score']  = parseFloat(reviews_average_score);
 
-    //Pegando Url da página do produto
-    respostaFinal['url'] = parsedHtml('').text();
+    // Passando a url do produto para a resposta final
+    respostaFinal['url'] = url;
     
-
     // Gera string JSON com a resposta final
     const jsonRespostaFinal = JSON.stringify(respostaFinal);
 
